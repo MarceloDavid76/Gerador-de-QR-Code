@@ -1,0 +1,96 @@
+* {
+    font-family: roboto;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    background-color: #3dba54;
+    
+}
+
+.main-table {
+    
+    background-color: #fff;
+    height: 220px;
+    width: 400px;
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.2s;
+    }
+
+.main-table.active {
+    height: 435px;
+}
+
+#qr-header {
+    text-align: center;
+    }
+
+
+#qr-header h1{
+    font-size: 1.8rem;
+    margin: 5px;
+     
+}
+
+
+#qr-header p {
+    font-size: 12px;
+    color: #333;
+    opacity: 0.8;
+    margin-bottom: 10px;
+    }
+
+.in-table {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    }
+
+.in-table input {
+    margin-bottom: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0.1px solid #cec0c0;
+}
+
+.in-table input:focus {
+  border-color: #2e7d32;         /* cor da borda quando o input estiver em foco */
+  box-shadow: 0 0 5px #2e7d32;   /* sombra ao redor do input */
+}
+
+.in-table button {
+  background-color: #4CAF50; /* Verde */
+  color: white;              /* Cor do texto */
+  padding: 10px 20px;        /* Espaçamento interno */
+  border: none;              /* Sem borda */
+  border-radius: 5px;        /* Bordas arredondadas */
+  cursor: pointer;           /* Cursor de mãozinha */
+  font-size: 16px;           /* Tamanho da fonte */
+  transition: background-color 0.3s ease; /* Animação suave */
+}
+
+.in-table button:hover {
+  background-color: #45a049; /* Cor ao passar o mouse */
+}
+
+#qr-code {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #CCC;
+    padding: 30px 0;
+    margin: 20px 0;
+    opacity: 0;
+    transition: .5s;
+    border-radius: 5px;
+}
+
+.main-table.active #qr-code {
+    opacity: 1;
+    }
